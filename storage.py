@@ -29,7 +29,7 @@ if args['val'] is None:
             local_storage = json.load(f)#something wrong
             print(local_storage.get(args['key']))
         except json.decoder.JSONDecodeError:
-            print('Error 1')
+            print(None)
 
 else:
     #Add new value in the file and in the local_storage
